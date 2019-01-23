@@ -19,7 +19,7 @@ do
             name=$(basename "$j" ".txt")
             name=${name// /_}
             echo $name
-            ITK_Tools/./GenerateMaskFromImageAndIndex $tgtDir/t2.nii.gz "$j" $tgtDir/$name.nii.gz 1  
+            ITK_Tools/./GenerateMaskFromImageAndIndex $tgtDir/t2.nii.gz "$j" $tgtDir/$name.nii.gz 0 
         done        
     fi
 done
